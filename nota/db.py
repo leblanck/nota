@@ -18,7 +18,7 @@ def get_database_path(config_file: Path) -> Path:
 def init_database(db_path: Path) -> int:
     """ Create the nota database """
     try:
-        db_path.weite_text("[]") #Empty to-do list
+        db_path.write_text("[]") #Empty to-do list
         return SUCCESS
     except OSError:
         return DB_WRITE_ERROR
