@@ -16,7 +16,7 @@ def init(
         prompt="to-do database location?",
     ),
 ) -> None:
-    """ Initialize the to-do db """
+    """ Initialize the to-do Database and Config File"""
     app_init_error = config.init_app(db_path)
     if app_init_error:
         typer.secho(
