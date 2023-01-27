@@ -49,4 +49,4 @@ class DatabaseHandler:
                 json.dump(todo_list, db, indent=4)
             return DBResponse(todo_list, SUCCESS)
         except OSError: # Will Cath File IO Issues
-            return DBResponse([], DB_WRITE_ERROR)
+            return DBResponse([], DB_W)
